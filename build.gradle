@@ -1,0 +1,25 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'org.matsim'
+version = '0.9.0-SNAPSHOT'
+
+description = """PT2MATSim"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+
+
+repositories {
+        
+     maven { url "http://download.osgeo.org/webdav/geotools" }
+     maven { url "http://dl.bintray.com/matsim/matsim" }
+     maven { url "http://repo.maven.apache.org/maven2" }
+     maven { url "https://jitpack.io" }
+}
+dependencies {
+    compile group: 'com.github.colinsheppard.matsim_all', name: 'matsim', version: 'master-SNAPSHOT'
+    compile group: 'com.opencsv', name: 'opencsv', version:'3.7'
+    testCompile group: 'junit', name: 'junit', version:'4.12'
+}
