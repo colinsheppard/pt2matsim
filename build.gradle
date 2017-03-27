@@ -2,13 +2,12 @@ apply plugin: 'java'
 apply plugin: 'maven'
 
 group = 'org.matsim'
-version = '0.9.0-SNAPSHOT'
+version = 'master-SNAPSHOT'
 
 description = """PT2MATSim"""
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
-
 
 
 repositories {
